@@ -1,0 +1,20 @@
+# Node.js
+node_modules
+dist
+
+# Logs
+logs
+*.log
+
+# dotenv
+.env
+
+# Docker volumes
+postgres-data
+
+# IDE
+.idea
+.vscode
+
+# OS
+.DS_Store
