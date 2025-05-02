@@ -3,14 +3,14 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "backend:up": "cd github-crm-backend/ && docker-compose up --build -d",
-    "backend:down": "cd github-crm-backend/ && dockercompose down -v",
+    "backend:up": "cd backend/ && docker-compose up --build -d",
+    "backend:down": "cd backend/ && dockercompose down -v",
     "backend:reset": "pnpm backend:down && pnpm backend:up && docker-compose exec nest-app pnpm prisma migrate reset --force",
-    "frontend:dev": "cd github-crm-frontend/ && pnpm dev",
+    "frontend:dev": "cd frontend/ && pnpm dev",
     "dev:all": "pnpm backend:up && pnpm frontend:dev",
 
-    "install:frontend": "cd github-crm-frontend && pnpm install",
-    "install:backend": "cd github-crm-backend && pnpm install",
+    "install:frontend": "cd frontend && pnpm install",
+    "install:backend": "cd backend && pnpm install",
     "install:all": "pnpm install:frontend && pnpm install:backend"
   }
 }
